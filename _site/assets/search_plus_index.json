@@ -1,0 +1,21 @@
+{"/blogs/others/about/": {
+    "title": "About others",
+    "keywords": "Jekyll",
+    "url": "/blogs/others/about/",
+    "body": "This is an about page for “others” in the collections."
+  },"/blogs/pages/about/": {
+    "title": "About",
+    "keywords": "Jekyll",
+    "url": "/blogs/pages/about/",
+    "body": "This is an about page."
+  },"/blogs/pages/contact/": {
+    "title": "Contact",
+    "keywords": "Jekyll",
+    "url": "/blogs/pages/contact/",
+    "body": "This is an contact page."
+  },"/blogs/pages/design/draft/": {
+    "title": "Design Draft",
+    "keywords": "Jekyll",
+    "url": "/blogs/pages/design/draft/",
+    "body": "This is an draft page."
+  }}
