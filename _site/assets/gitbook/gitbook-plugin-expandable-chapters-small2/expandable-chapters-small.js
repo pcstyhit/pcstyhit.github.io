@@ -7,52 +7,35 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
         FOLDABLE = '.chapter, .chapter li',
         ARTICLE_CHILDREN = 'ul',
         TRIGGER_TEMPLATE = '<i class="exc-trigger fa"></i>',
-        LS_NAMESPACE = 'expChapters';
+        EXPAND_CATEGORY_STORE = [];
 
     var init = function () {
         // adding the trigger element to each ARTICLES parent and binding the event
-        var config = gitbook.state.config.pluginsConfig || {};
-        var articlesExpand = false;
-        if (config && config[PLUGIN]) {
-            articlesExpand = config[PLUGIN].articlesExpand || false;
-        }
-        if (articlesExpand) {
-            $(ARTICLES)
-                .parent(CHAPTER)
-                .find(ARTICLE_CHILDREN)
-                .prev()
-                .css('cursor', 'pointer')
-                .on('click', function (e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    toggle($(e.target).closest(FOLDABLE));
-                })
-                .append(TRIGGER_TEMPLATE);
-        } else {
-            $(ARTICLES)
-                .parent(CHAPTER)
-                .find(ARTICLE_CHILDREN)
-                .prev()
-                .append(
-                    $(TRIGGER_TEMPLATE)
-                        .on('click', function (e) {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            toggle($(e.target).closest(FOLDABLE));
-                        })
-                );
-        }
-        expand(lsItem());
+        $(ARTICLES)
+        .parent(CHAPTER)
+        .find(ARTICLE_CHILDREN)
+        .prev()
+        .css('cursor', 'pointer')
+        .on('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            toggle($(e.target).closest(FOLDABLE));
+        })
+        .append(TRIGGER_TEMPLATE);
+
+        // ⭐ Not expand all item.
+        // expand(lsItem());
 
         // expand current selected chapter with it's parents
         var activeChapter = $(CHAPTER + '.active');
-        expand(activeChapter);
+
+        // ⭐ Not need to expand active chapter itself.
+        // expand(activeChapter);
 
         // expand current selected chapter's children
-        // expand(activeChapter.parents(CHAPTER));
-        activeChapter.find(ARTICLE_CHILDREN).closest(FOLDABLE).each(function () {
-            expand($(this));
-        });
+        expand(activeChapter.parents(CHAPTER));
+
+        showExpandedChapters();
     }
 
     var toggle = function ($chapter) {
@@ -66,37 +49,51 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
     var collapse = function ($chapter) {
         if ($chapter.length && $chapter.hasClass(TOGGLE_CLASSNAME)) {
             $chapter.removeClass(TOGGLE_CLASSNAME);
-            lsItem($chapter);
+            
+            const id = $chapter[0].id;
+            const elemIndex = EXPAND_CATEGORY_STORE.findIndex(element => element === id);
+            if (elemIndex !== -1) {
+                EXPAND_CATEGORY_STORE.splice(elemIndex, 1);
+            }
         }
     }
 
     var expand = function ($chapter) {
         if ($chapter.length && !$chapter.hasClass(TOGGLE_CLASSNAME)) {
             $chapter.addClass(TOGGLE_CLASSNAME);
-            lsItem($chapter);
+
+            const currentId = $chapter[0].id;
+            const elem = EXPAND_CATEGORY_STORE.find(element => element === currentId);
+            if(!elem){
+                EXPAND_CATEGORY_STORE.push(currentId);
+            }
         }
     }
 
     var lsItem = function () {
-        var map = JSON.parse(localStorage.getItem(LS_NAMESPACE)) || {}
-        if (arguments.length) {
-            var $chapters = arguments[0];
-            $chapters.each(function (index, element) {
-                var level = $(this).data('level');
-                var value = $(this).hasClass(TOGGLE_CLASSNAME);
-                map[level] = value;
-            })
-            localStorage.setItem(LS_NAMESPACE, JSON.stringify(map));
-        } else {
-            return $(CHAPTER).map(function (index, element) {
-                if (map[$(this).data('level')]) {
-                    return this;
-                }
-            })
-        }
+        //
+    }
+
+    var showExpandedChapters = function () {
+        EXPAND_CATEGORY_STORE.forEach((id) => {
+            const categoryElem = $(`#${id}`)[0]
+            if(!categoryElem.classList.contains(TOGGLE_CLASSNAME)){
+                categoryElem.classList.add(TOGGLE_CLASSNAME)
+            }
+        })
+
+        requestAnimationFrame(() => {
+            const target = document.querySelector('#book-summary-core .chapter.active');
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'auto',
+                    block: 'center'
+                });
+            }
+        });
     }
 
     gitbook.events.bind('page.change', function () {
-        init()
+        init();
     });
 });

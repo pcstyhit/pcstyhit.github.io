@@ -1,5 +1,42 @@
-.book-body {
+.page-content-category {
+    height: 150px;
+}
+
+.page-content-category .page-content-title {
+    height: 24px;
+    max-height: 24px;
+    padding: 4px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-top: 1px solid rgba(0, 0, 0, .07);
+}
+
+.page-content-category .page-content-title span {
+    text-decoration: underline;
+}
+
+.page-content-category .page-content {
+    height: 126px;
+    max-height: 126px;
+    padding: 0px;
+    overflow-x: hidden;
     overflow-y: scroll;
+    margin: 0px;
+}
+
+.page-content-category .page-content li {
+    font-size: 14px;
+    margin-top: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.book-body {
+    /* overflow-y: scroll; */
+    /* Fix firefox browser scroll bar dipaly abnormal issue */
+    overflow-y: unset;
 }
 
 .book-body .book-header {

@@ -1,2 +1,184 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/blogs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blogs/" rel="alternate" type="text/html" /><updated>2024-09-09T23:38:58+08:00</updated><id>http://localhost:4000/blogs/feed.xml</id><title type="html">Blogs</title><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>pcstyhit</name></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-02T22:33:46+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blogs</title><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>pcstyhit</name></author><entry><title type="html">TEST - 2</title><link href="http://localhost:4000/test/2022-01-02-test-1.html" rel="alternate" type="text/html" title="TEST - 2" /><published>2022-01-02T00:00:00+08:00</published><updated>2022-01-02T00:00:00+08:00</updated><id>http://localhost:4000/test/test-1</id><content type="html" xml:base="http://localhost:4000/test/2022-01-02-test-1.html"><![CDATA[<p>TEST - 2</p>
+
+<p>The jekyll-gitbook theme leverages [jekyll-toc][1] to generate the <em>Contents</em> for the page.
+The TOC feature is not enabled by default. To use the TOC feature, modify the TOC
+configuration in <code class="language-plaintext highlighter-rouge">_config.yml</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">toc</span><span class="pi">:</span>
+  <span class="na">enabled</span><span class="pi">:</span> <span class="kc">true</span>
+</code></pre></div></div>
+
+<h2 id="why-this-repo">Why this repo</h2>
+
+<p>long contents …..</p>
+
+<ol>
+  <li>a</li>
+  <li>b</li>
+  <li>c</li>
+  <li>d</li>
+</ol>
+
+<h3 id="sub-title-1">Sub title 1</h3>
+
+<h3 id="sub-title-2">Sub title 2</h3>
+
+<h3 id="sub-title-3">Sub title 3</h3>
+
+<h2 id="why-this-repo-1">Why this repo</h2>
+
+<p>long contents …..</p>
+
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+</ul>
+
+<h2 id="why-this-repo-2">Why this repo</h2>
+
+<p>long contents …..</p>
+
+<ol>
+  <li>e</li>
+  <li>f</li>
+  <li>g</li>
+  <li>h</li>
+</ol>
+
+<h2 id="why-this-repo-3">Why this repo</h2>
+
+<ul>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+</ul>
+
+<h2 id="why-this-repo-4">Why this repo</h2>
+
+<p>long contents …..</p>
+
+<ol>
+  <li>a</li>
+  <li>b</li>
+  <li>c</li>
+  <li>d</li>
+</ol>
+
+<h2 id="why-this-repo-5">Why this repo</h2>
+
+<p>long contents …..</p>
+
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+</ul>
+
+<h2 id="why-this-repo-6">Why this repo</h2>
+
+<p>long contents …..</p>
+
+<ol>
+  <li>e</li>
+  <li>f</li>
+  <li>g</li>
+  <li>h</li>
+</ol>
+
+<h2 id="why-this-repo-7">Why this repo</h2>
+
+<ul>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+</ul>
+
+<h2 id="why-this-repo-8">Why this repo</h2>
+
+<p>long contents …..</p>
+
+<ol>
+  <li>a</li>
+  <li>b</li>
+  <li>c</li>
+  <li>d</li>
+</ol>
+
+<h2 id="why-this-repo-9">Why this repo</h2>
+
+<p>long contents …..</p>
+
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+</ul>
+
+<h2 id="why-this-repo-10">Why this repo</h2>
+
+<p>long contents …..</p>
+
+<ol>
+  <li>e</li>
+  <li>f</li>
+  <li>g</li>
+  <li>h</li>
+</ol>
+
+<h2 id="why-this-repo-11">Why this repo</h2>
+
+<ul>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+</ul>
+
+<h2 id="why-this-repo-12">Why this repo</h2>
+
+<p>long contents …..</p>
+
+<ol>
+  <li>a</li>
+  <li>b</li>
+  <li>c</li>
+  <li>d</li>
+</ol>
+
+<h2 id="why-this-repo-13">Why this repo</h2>
+
+<p>long contents …..</p>
+
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+</ul>
+
+<h2 id="why-this-repo-14">Why this repo</h2>
+
+<p>long contents …..</p>
+
+<ol>
+  <li>e</li>
+  <li>f</li>
+  <li>g</li>
+  <li>h</li>
+</ol>
+
+<h2 id="why-this-repo-15">Why this repo</h2>
+
+<ul>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+</ul>]]></content><author><name>pcstyhit</name></author><category term="test" /><summary type="html"><![CDATA[TEST - 2]]></summary></entry><entry><title type="html">ABOUT</title><link href="http://localhost:4000/clang/2022-01-01-ABOUT.html" rel="alternate" type="text/html" title="ABOUT" /><published>2022-01-01T00:00:00+08:00</published><updated>2022-01-01T00:00:00+08:00</updated><id>http://localhost:4000/clang/ABOUT</id><content type="html" xml:base="http://localhost:4000/clang/2022-01-01-ABOUT.html"><![CDATA[<p>CLANG - ABOUT</p>]]></content><author><name>pcstyhit</name></author><category term="clang" /><summary type="html"><![CDATA[CLANG - ABOUT]]></summary></entry><entry><title type="html">HELLO</title><link href="http://localhost:4000/clang/2022-01-01-clang.html" rel="alternate" type="text/html" title="HELLO" /><published>2022-01-01T00:00:00+08:00</published><updated>2022-01-01T00:00:00+08:00</updated><id>http://localhost:4000/clang/clang</id><content type="html" xml:base="http://localhost:4000/clang/2022-01-01-clang.html"><![CDATA[<p>CLANG</p>]]></content><author><name>pcstyhit</name></author><category term="clang" /><summary type="html"><![CDATA[CLANG]]></summary></entry><entry><title type="html">ABOUT</title><link href="http://localhost:4000/hello/2022-01-01-ABOUT.html" rel="alternate" type="text/html" title="ABOUT" /><published>2022-01-01T00:00:00+08:00</published><updated>2022-01-01T00:00:00+08:00</updated><id>http://localhost:4000/hello/ABOUT</id><content type="html" xml:base="http://localhost:4000/hello/2022-01-01-ABOUT.html"><![CDATA[<p>HELLO - ABOUT</p>]]></content><author><name>pcstyhit</name></author><category term="hello" /><summary type="html"><![CDATA[HELLO - ABOUT]]></summary></entry><entry><title type="html">HELLO</title><link href="http://localhost:4000/hello/2022-01-01-hello.html" rel="alternate" type="text/html" title="HELLO" /><published>2022-01-01T00:00:00+08:00</published><updated>2022-01-01T00:00:00+08:00</updated><id>http://localhost:4000/hello/hello</id><content type="html" xml:base="http://localhost:4000/hello/2022-01-01-hello.html"><![CDATA[<p>HELLO</p>]]></content><author><name>pcstyhit</name></author><category term="hello" /><summary type="html"><![CDATA[HELLO]]></summary></entry><entry><title type="html">ABOUT</title><link href="http://localhost:4000/java/2022-01-01-ABOUT.html" rel="alternate" type="text/html" title="ABOUT" /><published>2022-01-01T00:00:00+08:00</published><updated>2022-01-01T00:00:00+08:00</updated><id>http://localhost:4000/java/ABOUT</id><content type="html" xml:base="http://localhost:4000/java/2022-01-01-ABOUT.html"><![CDATA[<p>JAVA - ABOUT</p>]]></content><author><name>pcstyhit</name></author><category term="java" /><summary type="html"><![CDATA[JAVA - ABOUT]]></summary></entry><entry><title type="html">HELLO</title><link href="http://localhost:4000/java/2022-01-01-JAVA.html" rel="alternate" type="text/html" title="HELLO" /><published>2022-01-01T00:00:00+08:00</published><updated>2022-01-01T00:00:00+08:00</updated><id>http://localhost:4000/java/JAVA</id><content type="html" xml:base="http://localhost:4000/java/2022-01-01-JAVA.html"><![CDATA[<p>JAVA</p>]]></content><author><name>pcstyhit</name></author><category term="java" /><summary type="html"><![CDATA[JAVA]]></summary></entry><entry><title type="html">ABOUT</title><link href="http://localhost:4000/js/2022-01-01-ABOUT.html" rel="alternate" type="text/html" title="ABOUT" /><published>2022-01-01T00:00:00+08:00</published><updated>2022-01-01T00:00:00+08:00</updated><id>http://localhost:4000/js/ABOUT</id><content type="html" xml:base="http://localhost:4000/js/2022-01-01-ABOUT.html"><![CDATA[<p>JS - ABOUT</p>]]></content><author><name>pcstyhit</name></author><category term="js" /><summary type="html"><![CDATA[JS - ABOUT]]></summary></entry><entry><title type="html">HELLO</title><link href="http://localhost:4000/js/2022-01-01-js.html" rel="alternate" type="text/html" title="HELLO" /><published>2022-01-01T00:00:00+08:00</published><updated>2022-01-01T00:00:00+08:00</updated><id>http://localhost:4000/js/js</id><content type="html" xml:base="http://localhost:4000/js/2022-01-01-js.html"><![CDATA[<p>JS</p>]]></content><author><name>pcstyhit</name></author><category term="js" /><summary type="html"><![CDATA[JS]]></summary></entry><entry><title type="html">ABOUT</title><link href="http://localhost:4000/py/2022-01-01-ABOUT.html" rel="alternate" type="text/html" title="ABOUT" /><published>2022-01-01T00:00:00+08:00</published><updated>2022-01-01T00:00:00+08:00</updated><id>http://localhost:4000/py/ABOUT</id><content type="html" xml:base="http://localhost:4000/py/2022-01-01-ABOUT.html"><![CDATA[<p>PY - ABOUT</p>]]></content><author><name>pcstyhit</name></author><category term="py" /><summary type="html"><![CDATA[PY - ABOUT]]></summary></entry></feed>

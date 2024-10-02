@@ -1,16 +1,3 @@
-# 🎈🎈🎈 A GitBook-Themed Page Based on Jekyll 🎈🎈🎈
-
-This project is originally based on the source project: [jekyll-gitbook](https://github.com/sighingnow/jekyll-gitbook).
-
-I've made some changes to the homepage design of the original project. You can check out the [Push commit #ae7fad](https://github.com/pcstyhit/pcstyhit.github.io/commit/ae7fadf01b86695aff02da7ae76eb78050c8d8a7) for details:
-
-- Modified the project to support blog categorization by category.
-- Added a feature to keep track of expanded blog content.
-- Enabled re-scroll to the active chapter of the category summary list.
-- Extracted blog navigation.
-
-# 🔽🔽🔽 Original README.md 🔽🔽🔽
-
 Make Jelly site have a GitBook look!
 
 ## Demo
