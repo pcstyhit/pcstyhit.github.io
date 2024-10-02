@@ -1,4 +1,22 @@
 /* .book .book-summary .chapter > .articles { */
+.book .book-summary {
+	user-select: none;
+	overflow-y: unset;
+}
+
+.book .book-summary .book-base-title {
+	height: 25px;
+	border-bottom: 1px solid rgba(0, 0, 0, .07);
+	padding: 0px 20px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.book-summary ul.summary {
+	height: calc(100% - 255px);
+	overflow-y: auto;
+}
+
 .book .book-summary .chapter ul {
 	overflow: hidden;
 	max-height: 0px;
@@ -20,8 +38,8 @@
 
 .book .book-summary .exc-trigger {
 	position: absolute;
-  	left: 12px;
-  	top: 12px;
+	left: 12px;
+	top: 12px;
 }
 
 .book .book-summary ul.summary li a,
@@ -30,10 +48,11 @@
 }
 
 .book .book-summary .exc-trigger:before {
-  	content: "\f105";
+		content: "\f105";
 }
 
 .book .book-summary .expanded > a .exc-trigger:before,
 .book .book-summary .expanded > span .exc-trigger:before {
 	content: "\f107";
 }
+	
