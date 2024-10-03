@@ -35,7 +35,7 @@
                     {{category}}
                 </a>
                 <ul class="category-list" id="category-list-{{category | escape}}">
-                    {% assign posts_in_category = site.posts | where: "category", category %}
+                    {% assign posts_in_category = site.posts | where: "category", category | sort: 'date' %}
                     {% for post in posts_in_category %}
                     <li class="chapter {% if page.url == post.url %}active{% endif %}"
                         data-path="{{site.baseurl}}{{post.url}}">

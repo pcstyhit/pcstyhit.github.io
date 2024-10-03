@@ -33,6 +33,10 @@
     text-overflow: ellipsis;
 }
 
+.markdown-section pre {
+    background: unset;
+}
+
 .book-body {
     /* overflow-y: scroll; */
     /* Fix firefox browser scroll bar dipaly abnormal issue */
